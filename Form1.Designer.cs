@@ -44,6 +44,7 @@
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(100, 20);
             this.txtFirstName.TabIndex = 0;
+            this.txtFirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFirstName_KeyPress);
             // 
             // txtLastName
             // 
@@ -51,6 +52,7 @@
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(100, 20);
             this.txtLastName.TabIndex = 1;
+            this.txtLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLastName_KeyPress);
             // 
             // lblFirstName
             // 
@@ -92,10 +94,25 @@
             // numAge
             // 
             this.numAge.Location = new System.Drawing.Point(116, 124);
+            this.numAge.Maximum = new decimal(new int[] {
+            150,
+            0,
+            0,
+            0});
+            this.numAge.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numAge.Name = "numAge";
             this.numAge.Size = new System.Drawing.Size(75, 20);
             this.numAge.TabIndex = 7;
             this.numAge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numAge.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // Form1
             // 

@@ -10,47 +10,19 @@ namespace Activity2
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(
-                "Hello " + txtFirstName.Text + " " + txtLastName.Text + ". " +
-                "You are " + txtAge.Text + " years old."
-            );
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtLastName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtAge_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtFirstName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblLastName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblAge_Click(object sender, EventArgs e)
-        {
-
+            if ((txtFirstName.TextLength < 1) && (txtLastName.TextLength < 1))
+            {
+                MessageBox.Show("Error! Please ensure valid inputs");
+            }
+            else
+            {
+                MessageBox.Show(
+                    "Hello " + txtFirstName.Text + " " + txtLastName.Text + ". " +
+                    "You are " + numAge.Value + " years old."
+                );
+            }
         }
     }
 }

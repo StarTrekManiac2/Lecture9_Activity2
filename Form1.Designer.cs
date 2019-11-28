@@ -30,11 +30,12 @@
         {
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
-            this.txtAge = new System.Windows.Forms.TextBox();
             this.lblFirstName = new System.Windows.Forms.Label();
             this.lblLastName = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
+            this.numAge = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numAge)).BeginInit();
             this.SuspendLayout();
             // 
             // txtFirstName
@@ -43,7 +44,6 @@
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(100, 20);
             this.txtFirstName.TabIndex = 0;
-            this.txtFirstName.TextChanged += new System.EventHandler(this.txtFirstName_TextChanged);
             // 
             // txtLastName
             // 
@@ -51,15 +51,6 @@
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(100, 20);
             this.txtLastName.TabIndex = 1;
-            this.txtLastName.TextChanged += new System.EventHandler(this.txtLastName_TextChanged);
-            // 
-            // txtAge
-            // 
-            this.txtAge.Location = new System.Drawing.Point(104, 123);
-            this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(100, 20);
-            this.txtAge.TabIndex = 2;
-            this.txtAge.TextChanged += new System.EventHandler(this.txtAge_TextChanged);
             // 
             // lblFirstName
             // 
@@ -69,7 +60,6 @@
             this.lblFirstName.Size = new System.Drawing.Size(106, 13);
             this.lblFirstName.TabIndex = 3;
             this.lblFirstName.Text = "Enter your first name:";
-            this.lblFirstName.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblLastName
             // 
@@ -79,17 +69,15 @@
             this.lblLastName.Size = new System.Drawing.Size(106, 13);
             this.lblLastName.TabIndex = 4;
             this.lblLastName.Text = "Enter your last name:";
-            this.lblLastName.Click += new System.EventHandler(this.lblLastName_Click);
             // 
             // lblAge
             // 
             this.lblAge.AutoSize = true;
-            this.lblAge.Location = new System.Drawing.Point(112, 98);
+            this.lblAge.Location = new System.Drawing.Point(112, 99);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(79, 13);
             this.lblAge.TabIndex = 5;
             this.lblAge.Text = "Enter your age:";
-            this.lblAge.Click += new System.EventHandler(this.lblAge_Click);
             // 
             // btnSubmit
             // 
@@ -101,21 +89,29 @@
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
+            // numAge
+            // 
+            this.numAge.Location = new System.Drawing.Point(116, 124);
+            this.numAge.Name = "numAge";
+            this.numAge.Size = new System.Drawing.Size(75, 20);
+            this.numAge.TabIndex = 7;
+            this.numAge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(298, 241);
+            this.Controls.Add(this.numAge);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.lblAge);
             this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.lblFirstName);
-            this.Controls.Add(this.txtAge);
             this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.txtFirstName);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numAge)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,11 +121,11 @@
 
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.TextBox txtLastName;
-        private System.Windows.Forms.TextBox txtAge;
         private System.Windows.Forms.Label lblFirstName;
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.Label lblAge;
         private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.NumericUpDown numAge;
     }
 }
 

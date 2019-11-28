@@ -43,6 +43,7 @@
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(100, 20);
             this.txtFirstName.TabIndex = 0;
+            this.txtFirstName.TextChanged += new System.EventHandler(this.txtFirstName_TextChanged);
             // 
             // txtLastName
             // 
@@ -58,6 +59,7 @@
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(100, 20);
             this.txtAge.TabIndex = 2;
+            this.txtAge.TextChanged += new System.EventHandler(this.txtAge_TextChanged);
             // 
             // lblFirstName
             // 
@@ -77,6 +79,7 @@
             this.lblLastName.Size = new System.Drawing.Size(106, 13);
             this.lblLastName.TabIndex = 4;
             this.lblLastName.Text = "Enter your last name:";
+            this.lblLastName.Click += new System.EventHandler(this.lblLastName_Click);
             // 
             // lblAge
             // 
@@ -86,6 +89,7 @@
             this.lblAge.Size = new System.Drawing.Size(79, 13);
             this.lblAge.TabIndex = 5;
             this.lblAge.Text = "Enter your age:";
+            this.lblAge.Click += new System.EventHandler(this.lblAge_Click);
             // 
             // btnSubmit
             // 
@@ -95,6 +99,7 @@
             this.btnSubmit.TabIndex = 6;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // Form1
             // 

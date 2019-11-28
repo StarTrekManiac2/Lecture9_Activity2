@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Activity2
@@ -22,12 +15,40 @@ namespace Activity2
 
         }
 
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Hello " + txtFirstName.Text + " " + txtLastName.Text + ". " +
+                "You are " + txtAge.Text + " years old."
+            );
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
         private void txtLastName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAge_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFirstName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLastName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAge_Click(object sender, EventArgs e)
         {
 
         }
